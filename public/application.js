@@ -5,10 +5,10 @@ new Vue({
     tasks: ['Name', 'Age', 'Address'],
   },
   created: function () {
-    this.fetchData();
+    this.getCurrentTasks();
   },
   methods: {
-    fetchData: function () {
+    getCurrentTasks: function () {
       var xhr = new XMLHttpRequest()
       var self = this
       xhr.open('GET', '/api/v1/tasks')
